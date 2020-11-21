@@ -27,6 +27,7 @@
     text-transform: uppercase;
     color: $mainDefaultColor;
     line-height: 60px;
+    transition: color 0.5s;
 
     &:hover {
       color: $mainBlueColor;
