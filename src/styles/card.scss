@@ -5,32 +5,40 @@
   @include flexColumn;
   justify-content: $centerPosition;
   align-items: $centerPosition;
-  width: 200px;
+  width: $cardWidth;
   background: $mainLightColor;
   border: 1px solid #f3f3f3;
-  margin: 0 24px 50px;
-  padding: 30px 14px 15px;
-  box-sizing: border-box;
+  padding: 15px 14px;
   font-family: $serviceFonts;
   @include defaultSizeWeight;
   color: $mainDefaultColor;
+  box-sizing: border-box;
+
+  &__img-container {
+    border: 3px solid transparent;
+    padding-top: 12px;
+    transition: transform 1s;
+
+    &:hover {
+      border: 3px solid #f3f3f3;
+      transform: scale(1.2);
+    }
+  }
 
   &__img {
-    width: 160px;
     height: 134px;
-    align-self: $centerPosition;
+    width: 160px;
   }
 
   &__description {
     @include flexColumn;
-    padding-top: 15px;
+    padding-top: 22px;
   }
 
   &__title {
     @include defaultSizeWeight;
     line-height: 15px;
-    padding-top: 30px;
-    margin: 0;
+    padding-top: 17px;
   }
 
   &__code {
@@ -79,6 +87,7 @@
     line-height: 40px;
     text-decoration: none;
     color: $mainLightColor;
+    transition: all 0.5s;
 
     &:hover {
       background-color: $mainLightColor;
