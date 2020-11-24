@@ -5,15 +5,14 @@
   @include flexColumn;
   justify-content: $centerPosition;
   align-items: $centerPosition;
-  width: 200px;
+  width: $cardWidth;
   background: $mainLightColor;
   border: 1px solid #f3f3f3;
-  margin: 0 24px 50px;
   padding: 15px 14px;
-  box-sizing: border-box;
   font-family: $serviceFonts;
   @include defaultSizeWeight;
   color: $mainDefaultColor;
+  box-sizing: border-box;
 
   &__img-container {
     border: 3px solid transparent;

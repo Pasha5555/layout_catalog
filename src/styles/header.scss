@@ -2,7 +2,8 @@
 @import "mixins";
 
 .header {
-  @include flexBetween;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   align-items: $centerPosition;
   background-color: $mainLightColor;
